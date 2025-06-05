@@ -1,1 +1,9 @@
+#Install required libraries
 
+!pip install keras ~= 3.8.0 \
+  matplotlib ~= 3.10.0 \
+  numpy ~= 2.0.0 \
+  pandas ~= 2.2.0 \
+  tensorflow ~= 2.18.0
+
+print("\n\nAll requirements sucessfully installed.")
