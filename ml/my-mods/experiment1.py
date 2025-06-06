@@ -13,7 +13,7 @@ features = ['TRIP_MILES']
 label = 'FARE'
 
 #Trains the model(s) based on learing_rate, epochs, batch_size, features, and label
-model_1 = t.run_experiment(im.training_df, features, label, learning_rate, epochs, batch_size)
+#model_1 = t.run_experiment(im.training_df, features, label, learning_rate, epochs, batch_size)
 model_2 = t.run_experiment(im.training_df, ['TRIP_MILES', 'TRIP_SECONDS'], label, learning_rate, epochs, batch_size)
 
 

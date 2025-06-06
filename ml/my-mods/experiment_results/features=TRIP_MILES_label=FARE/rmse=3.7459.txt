@@ -1,10 +1,10 @@
 --------------------------------------------------------------------------------
 |                                  MODEL INFO                                  |
 --------------------------------------------------------------------------------
-Weight for feature[TRIP_MILES]: 2.280
-Bias: 4.973
+Weight for feature[TRIP_MILES]: 2.282
+Bias: 4.977
 
-FARE = 2.280 * TRIP_MILES + 4.973
+FARE = 2.282 * TRIP_MILES + 4.977
 
 
 Final RMSE Value: 3.7459

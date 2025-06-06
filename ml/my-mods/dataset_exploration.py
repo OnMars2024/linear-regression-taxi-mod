@@ -127,7 +127,7 @@ def plot_model(df, features, weights, bias, fig):
         for i in range(len(y)):
             x.append((z[i] - weights[1][0] * y[i] - bias[0]) / weights[0][0])
 
-        plane = ld.pd.DataFrame({'x':x, 'y':y, 'z':z * 3})
+        plane = ld.pd.DataFrame({'x':x, 'y':y, 'z':[z] * 3})
 
         light_yellow = [[0, '#89CFF0'], [1, '#FFDB58']]
 

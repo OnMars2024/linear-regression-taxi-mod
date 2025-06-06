@@ -5,7 +5,7 @@ def format_currency(x):
 
 def build_batch(df, batch_size):
   batch = df.sample(n=batch_size).copy()
-  batch.set_index(np.arange(batch_size), inplace=True)
+  batch.set_index(ld.np.arange(batch_size), inplace=True)
   return batch
 
 def predict_fare(model, df, features, label, batch_size=50):
