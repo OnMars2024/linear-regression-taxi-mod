@@ -56,7 +56,7 @@ def make_plots(df, feature_names, label_name, model_output, batch_size=200):
                         subplot_titles = ("Loss Curve", "Model Plot"),
                         specs = [[{"type" : "scatter"}, {"type" : model_plot_type}]])
 
-    plot_data(random_sample, feature_names,label_name, fig)
+    plot_data(random_sample, feature_names, label_name, fig)
     plot_model(random_sample, feature_names, weights, bias, fig)
     plot_loss_curve(epochs, rmse, fig)
 
@@ -101,7 +101,7 @@ def plot_data(df, features, label, fig):
 
     else:
 
-        fig.update_layout(scene1 = dict(xaxis_title = feature[0], yaxis_title = feature[1], zaxis_title = label))
+        fig.update_layout(scene1 = dict(xaxis_title = features[0], yaxis_title = features[1], zaxis_title = label))
    
     return
 
