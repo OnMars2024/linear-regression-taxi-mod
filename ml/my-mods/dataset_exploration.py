@@ -44,6 +44,8 @@ def make_plots(df, feature_names, label_name, model_output, batch_size=200):
 
     if(len(feature_names) == 1):
         is_2d_plot = True
+    else:
+        is_2d_plot = False
 
     if(is_2d_plot):
         model_plot_type = 'scatter'
