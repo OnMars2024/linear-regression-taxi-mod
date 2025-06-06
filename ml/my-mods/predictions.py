@@ -1,4 +1,5 @@
 import lib_dep as ld
+import dataset_exploration as de
 
 def format_currency(x):
   return "${:.2f}".format(x)
@@ -24,6 +25,19 @@ def predict_fare(model, df, features, label, batch_size=50):
     data[features[1]].append("{:.2f}".format(batch.at[i, features[1]]))
 
   output_df = ld.pd.DataFrame(data)
+
+  #Cleans feature and label names
+  safe_feature_str = "_".join(map(str, features))
+  safe_label_str = str(label).replace(" ", "_")
+  safe_l1_loss = f"L1_Mean_Loss: {ld.np.mean([float(val.replace("$","")) for val in data["L1_LOSS"]]):.4f}"
+
+  #Create directory for specific prediction
+  dir_path = f'prediction_results/features={safe_feature_str}_label={safe_label_str}'
+  de.os.makedirs(dir_path, exist_ok = True)
+
+  #Creates file path
+  file_path = dir_path + safe_l1_loss
+  output_df.to_csv(file_path)
   return output_df
 
 def show_predictions(output):
