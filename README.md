@@ -3,9 +3,9 @@ A modified version of the file "linear_regression_taxi.ipynb" distributed by Goo
 
 Features Added/Modified:
 * Separated the original code (linear_regression_taxi.ipynb) from my modified code (found in the my-mods directory).
-* Broke up the original linear_regression_taxi code into separated .py files. Made the necessary changes so that all the code worked as intended, despite being now separated.
-* Saved pre-processing plots, data stats, correlation matrix, and training data as png/csv to figures directory.
-* Created experiment specific directories. These directories contain the relevant model information and figures for each run.
+* Broke up the my modified code into separate .py files. Made the necessary changes so that all the code worked as intended.
+* Saved pre-processing plots, data stats, correlation matrix, and training data as .png/.csv  to figures directory.
+* Created experiment specific directories. These directories generate and contain the relevant model information and figures for each run.
 
 @title Copyright 2023 Google LLC. Double-click here for license information.
  Licensed under the Apache License, Version 2.0 (the "License");
