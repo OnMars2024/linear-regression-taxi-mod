@@ -1,0 +1,13 @@
+--------------------------------------------------------------------------------
+|                                  MODEL INFO                                  |
+--------------------------------------------------------------------------------
+Weight for feature[TRIP_SECONDS]: 0.017
+Bias: 1.125
+
+FARE = 0.017 * TRIP_SECONDS + 1.125
+
+
+Final RMSE Value: 9.6456
+Number of Epochs: 20
+Learning Rate: 0.0005
+Batch Size: 50

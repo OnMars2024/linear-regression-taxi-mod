@@ -1,6 +1,11 @@
 # linear-regression-taxi-mod
 A modified version of the file "linear_regression_taxi.ipynb" distributed by Google CoLabs as a part of their ML Crash Course. 
 
+Features Added:
+    Created experiment specific directories. These directories contain the relevant model information for each run.
+
+Features Modified:
+
 @title Copyright 2023 Google LLC. Double-click here for license information.
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
