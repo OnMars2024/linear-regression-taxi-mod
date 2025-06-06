@@ -18,5 +18,5 @@ model_2 = t.run_experiment(im.training_df, ['TRIP_MILES', 'TRIP_SECONDS'], label
 
 
 #Tests the model (The test set is the same as training set, which isn't ideal)
-output = p.predict_fare(model_2, im.training_df, features, label)
+output = p.predict_fare(model_2, im.training_df, ['TRIP_MILES', 'TRIP_SECONDS'], label)
 p.show_predictions(output)
