@@ -2,7 +2,11 @@
 A modified version of the file "linear_regression_taxi.ipynb" distributed by Google CoLabs as a part of their ML Crash Course. 
 
 Features Added:
-    Created experiment specific directories. These directories contain the relevant model information for each run.
+* Separated the original code (linear_regression_taxi.ipynb) from my modified code (found in the my-mods directory).
+* Broke up the original linear_regression_taxi code into separated .py files. Made the necessary changes so that all the code worked as intended, despite being now separated.
+* Saved pre-processing plots, data stats, correlation matrix, and training data as png/csv to figures directory.
+* Created experiment specific directories. These directories contain the relevant model information and figures for each run.
+
 
 Features Modified:
 
